@@ -28,8 +28,8 @@ spec:
     spec:
       containers:
       - name: warp-connector
-        image: warp-connector:latest
-        imagePullPolicy: Never  # Use local image
+        image: ghcr.io/kotcsolutions/warp-connector:latest
+        imagePullPolicy: IfNotPresent
         env:
         - name: WARP_CONNECTOR_TOKEN
           valueFrom:
